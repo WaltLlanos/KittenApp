@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KittenApp</title>
+</head>
+<body>
+    <h1>KittenApp</h1>
+    <span id="error"></span>
+    <section id="randomCats">
+        <h2>Random Kittens</h2>
+        <article>
+            <img id="img1" width= 500px alt="Foto gatito aleatorio">
+            <button id="btn1" onclick="saveFavorite()">Add to Favorites</button>
+        </article>
+        <article>
+            <img id="img2" width= 500px alt="Foto gatito aleatorio">
+            <button id="btn2" onclick="saveFavorite()">Add to Favorites</button>
+        </article>
+
+        <button onclick="loadRandom()">Reload</button>
+    </section>
+
+    <section id="uploadCat">
+        <h2>Upload your Kitten Pic</h2>
+        <form id="uploadForm">
+            <input id="file" type="file" name="file"/>
+            <button type="button" onclick="uploadCatPic()">Upload</button>
+        </form>
+    </section>
+
+    <section id="favoriteCats">
+    </section>
+    
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
